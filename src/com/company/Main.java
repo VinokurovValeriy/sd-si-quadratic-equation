@@ -2,14 +2,14 @@ package com.company;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args)
+    {
         try{
-        QuadraticSolution sol = new QuadraticSolution();
-        sol.scanCoefficient();
-        sol.solution();
+            QuadraticEquation sol = new QuadraticEquation();
+            sol.solvesTheQuadraticEquation();
         }
-        catch (DiscremenantIsNegativeException ex){
-        System.out.println(ex.getMessage());
+        catch (com.company.DiscriminantNegativeException ex){
+            System.out.println(ex.getMessage());
         }
     }
 }
