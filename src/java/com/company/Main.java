@@ -8,7 +8,7 @@ public class Main {
             QuadraticEquation sol = new QuadraticEquation();
             sol.solvesTheQuadraticEquation();
         }
-        catch (com.company.DiscriminantNegativeException ex){
+        catch (DiscriminantNegativeException ex){
             System.out.println(ex.getMessage());
         }
     }

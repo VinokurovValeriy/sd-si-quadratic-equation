@@ -2,11 +2,19 @@ package com.company;
 
 import java.lang.*;
 
-public class QuadraticEquation extends CoefficientScanner
+public class QuadraticEquation
 {
+    private double a;
+    private double b;
+    private double c;
+
     public void solvesTheQuadraticEquation() throws DiscriminantNegativeException
     {
-        scanCoefficient();
+        CoefficientScanner sc = new CoefficientScanner();
+        sc.scanCoefficient();
+        a = sc.firstCoefficient;
+        b = sc.secondCoefficient;
+        c = sc.thirdCoefficient;
         double discriminant = calculateDiscriminant();
         if (discriminant == 0)
         {
